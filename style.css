@@ -60,6 +60,10 @@ body,
 :where(blockquote, figure):where([class]) {
     margin: 0;
 }
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 :where(
   h1,
