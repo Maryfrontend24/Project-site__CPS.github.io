@@ -4,6 +4,7 @@ height: 100%;
 }
 
 
+
 /*aside*/
 
 .side-wrapper{
@@ -21,12 +22,13 @@ height: 100%;
     color: var(--black-color);
 }
 
-    /*Если нужен скролл*/
+    /*Это еслли нужен скролл*/
 
     /*.side-window{*/
     /*    overflow-y: auto;*/
     /*    outline: solid transparent 1px;*/
     /*}*/
+
 
 /*side-window__header*/
 nav{
@@ -57,6 +59,7 @@ nav{
     background-color: #FFFFFF;
 }
 
+
 .button--close::after{
     transform: rotate(45deg);
 }
@@ -75,6 +78,16 @@ background-color: rgba(255, 62, 121, 0.7);
     transition: all 0.2s linear;
 }
 
+/* если нежен фокус при Tab*/
+a:focus-visible{
+    outline:none;
+    color:var(--active-text-color);
+}
+button:focus{
+    outline:none;
+    background-color: rgb(222, 30, 119);
+}
+
 
 /*side-nav*/
 
@@ -84,6 +97,7 @@ background-color: rgba(255, 62, 121, 0.7);
     margin-right: auto;
     margin-bottom: auto;
 }
+
 .side-nav__item:not(:last-child){
     margin-bottom: 32px;
 }
@@ -99,9 +113,11 @@ background-color: rgba(255, 62, 121, 0.7);
     margin-left: 0;
 }
 
-.side-nav__link:hover{
-    color:var(--active-text-color);
-}
+        /* Это если нужно измение цвета при наведении*/
+        /*.side-nav__link:hover{*/
+        /*    color:var(--active-text-color);*/
+        /*}*/
+
 .side-nav__link--active{
     border:4px solid transparent;
     margin-left: -24px;
@@ -159,8 +175,8 @@ background-color: rgba(255, 62, 121, 0.7);
 }
 .languages-block__item:not(:last-child){
     margin-right:7px ;
-
 }
+
 .languages-block__link--done:active{
     color:var(--active-text-color);
 }
